@@ -19,10 +19,10 @@ from django.conf.global_settings import *
 
 
 # TOCHANGE 在蓝鲸平台上注册的应用的编码以及生成的应用对应的Token
-APP_ID = 'framework'
-APP_TOKEN = 'frameworktoken'
+APP_ID = '915bbf0b-7e9b-4bb2-a40c-983c26dba715'
+APP_TOKEN = '29058418-5514-4c43-9127-ec5eeb7ed758'
 #平台host
-BK_PAAS_HOST = "http://openpaas.o.ied.com"
+BK_PAAS_HOST = "http://paas.bking.com"
 #数据库初始化 超级用户列表
 ADMIN_USERNAME_LIST = ['admin']
 

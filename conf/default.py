@@ -19,7 +19,7 @@ from django.conf.global_settings import *
 
 
 # TOCHANGE 在蓝鲸平台上注册的应用的编码以及生成的应用对应的Token
-APP_ID = '915bbf0b-7e9b-4bb2-a40c-983c26dba715'
+APP_ID = 'twoapp'
 APP_TOKEN = '29058418-5514-4c43-9127-ec5eeb7ed758'
 #平台host
 BK_PAAS_HOST = "http://paas.bking.com"
@@ -166,7 +166,7 @@ LOG_CLASS = 'logging.handlers.RotatingFileHandler'
 if RUN_MODE == 'DEVELOP':
     LOG_LEVEL = 'DEBUG'
 elif RUN_MODE == 'TEST':
-    LOGGING_DIR = os.path.join('/data/logs/test/apps/', APP_ID)
+    LOGGING_DIR = os.path.join('/data/logs/apps/', APP_ID)
     LOG_LEVEL = 'INFO'
 elif RUN_MODE == 'PRODUCT':
     LOGGING_DIR = os.path.join('/data/logs/apps/', APP_ID)

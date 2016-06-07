@@ -26,8 +26,11 @@ def _gen_header():
 
 def _http_request(method, url, headers=None, data=None):
     try:
-        if method == "GET":
+        if method == "GET":			
             resp = requests.get(url=url, headers=headers, params=data)
+			logger.error('url:%s' % url)
+			logger.error('params:%s' % params)
+			logger.error('resp:%s' % resp)
         elif method == "HEAD":
             resp = requests.head(url=url, headers=headers)
         elif method == "POST":
